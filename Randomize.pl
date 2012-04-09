@@ -46,7 +46,7 @@ sub _hdlr_randomize {
         or return; # Error
     my $separator = _hdlr_randomize_separator ($ctx);
     my @out =  split /\Q$separator\E/, $out;
-    unshift @out if $out[0] !~ /\S/;
+    shift @out if $out[0] !~ /\S/;
     pop @out if $out[$#out] !~ /\S/;
  
     # Output - PHP
