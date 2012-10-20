@@ -1,12 +1,14 @@
 package MT::Plugin::OMV::Randomize;
+# $Id$
 
 use strict;
 use MIME::Base64;
 use List::Util;
 
-use vars qw( $MYNAME $VERSION );
-$MYNAME = (split /::/, __PACKAGE__)[-1];
-$VERSION = '0.00_01';
+use vars qw( $VENDOR $MYNAME $VERSION );
+($VENDOR, $MYNAME) = (split /::/, __PACKAGE__)[-2, -1];
+(my $revision = '$Rev$') =~ s/\D//g;
+$VERSION = '0.01'. ($revision ? ".$revision" : '');
 
 use base qw( MT::Plugin );
 my $plugin = new MT::Plugin ({

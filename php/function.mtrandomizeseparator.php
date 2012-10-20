@@ -1,1 +1,1 @@
-<?phpfunction smarty_function_mtrandomizeseparator ($args, &$ctx) {    return $ctx->stash ('separator');}?>
+<?php// $Id$function smarty_function_mtrandomizeseparator ($args, &$ctx) {    return $ctx->stash ('separator');}?>

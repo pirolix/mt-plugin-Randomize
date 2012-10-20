@@ -1,4 +1,6 @@
 <?php
+// $Id$
+
 function smarty_block_mtrandomize ($args, $content, &$ctx, &$repeat) {
     $localized_values = array ('separator');
     if (!isset ($content)) {
